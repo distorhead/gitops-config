@@ -9,7 +9,7 @@ spec:
     spec:
       chart: quickstart-application
       sourceRef:
-        kind: HelmRepository
+        kind: GitRepository
         name: gitops-app2
   interval: 30s
   targetNamespace: gitops-app2
