@@ -3,7 +3,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: gitops-app2
-  namespace: wego-system
+  namespace: gitops-app2
   labels:
     chart: quickstart-application
 spec:
