@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-c2aa663ec4999e9e7131c84e7a37a5ac
+  name: gitops-app2
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/distorhead/gitops-config.git
+  deployment_type: helm
+  path: ./
+  source_type: git
+  url: ssh://git@github.com/distorhead/gitops-app2.git
