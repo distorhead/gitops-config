@@ -5,4 +5,3 @@ metadata:
   namespace: wego-system
 resources:
 - ../../../apps/gitops-app
-- ../../../apps/gitops-app2
