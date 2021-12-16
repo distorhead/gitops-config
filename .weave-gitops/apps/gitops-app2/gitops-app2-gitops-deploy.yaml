@@ -4,10 +4,12 @@ kind: HelmRelease
 metadata:
   name: gitops-app2
   namespace: wego-system
+  labels:
+    chart: quickstart-application
 spec:
   chart:
     spec:
-      chart: ./
+      chart: .helm
       sourceRef:
         kind: GitRepository
         name: gitops-app2
