@@ -1,0 +1,10 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: gitops-app2
+  namespace: wego-system
+spec:
+  interval: 30s
+  url: ssh://git@github.com/distorhead/gitops-app2
+
